@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  font-family: "Microsoft YaHei UI";
+}
+body{
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.employees_table {
+  width: 92.7%;
+  margin: auto;
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  border: 2px solid #000;
+  border-collapse: collapse;
+  font-size: 26px;
+  td{
+    border: 2px solid #000;
+    text-align: center;
+  }
+  th {
+    background-color: #000;
+    font-weight: normal;
+    color: #fff;
+  }
+  tr{
+    height: 72px;
+    width: 100%;
+    color: #000;
+  }
+  tr:nth-child(even){
+    background-color: #eee;
+  }
+}
