@@ -23,7 +23,6 @@ public class EmployeeController {
         return "employees";
     }
 
-
     @GetMapping("/employees/{id}")
     ResponseEntity getEmployee(@PathVariable("id") int id) {
         return new ResponseEntity<>(employeeRepository.getEmployee(id), HttpStatus.OK);
