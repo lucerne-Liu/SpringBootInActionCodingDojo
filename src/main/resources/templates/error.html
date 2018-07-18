@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <title>error</title>
+</head>
+<body>
+    <div>There seems to be a problem with the page you request
+        <span th:text="${path}"></span>
+    </div>
+    <p th:text="${'Details: ' + message}"></p>
+    <p hidden th:text="${trace}"></p>
+</body>
+</html>

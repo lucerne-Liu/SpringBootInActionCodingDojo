@@ -1,10 +1,12 @@
 package com.example.employeeapi.datasource.provider;
 
 import com.example.employeeapi.model.Employee;
+import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.List;
 
+@Component
 public class EmployeeDataProvider {
     private List<Employee> employees = Arrays.asList(
             new Employee(0, "小明", 20, "男"),
